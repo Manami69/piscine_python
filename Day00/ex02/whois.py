@@ -1,15 +1,15 @@
 import sys
 
-if len(sys.argv)!=2:
+if len(sys.argv) != 2:
     print("ERROR")
 else:
     try:
-        nb=int(sys.argv[1])
-        if nb==0:
+        nb = int(sys.argv[1])
+        if nb == 0:
             print("I'm Zero.")
-        elif nb%2==0:
+        elif nb % 2 == 0:
             print("I'm Even.")
         else:
             print("I'm Odd.")
-    except:
+    except ValueError:
         print("ERROR")
